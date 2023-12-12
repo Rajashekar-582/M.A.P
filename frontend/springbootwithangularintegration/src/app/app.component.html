@@ -1,0 +1,26 @@
+<h1 class="text-center"> Mobile Application System</h1>
+<button class="btn btn-info m-3" (click)="getMobiles()" >Get Mobiles</button>
+<br/>
+<table class="table table-bordered table-dark m-3">
+  <tr>
+    <th>id</th>
+    <th>name</th>
+    <th>image</th>
+  </tr>
+  <tr *ngFor="let mobile of mobiles">
+      <td>{{mobile.id}}</td>
+      <td>{{mobile.name}}</td>
+      <td>{{mobile.image}}</td>
+  </tr>
+
+
+
+
+  <tr>
+    <td><input type="text" [(ngModel)]="mob.id"/></td>
+    <td><input type="text" [(ngModel)]="mob.name"/></td>
+    <td><input type="text" [(ngModel)]="mob.image"/></td>
+    <button class="btn btn-info" (click)="addMobile()" >Add Mobile</button>
+    {{msg}}
+  </tr>
+</table>
