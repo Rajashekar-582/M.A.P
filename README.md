@@ -1,2 +1,2 @@
 # M.A.P
-Mobile Application Project
+Mobile Application Project (Using Angular and SpringBoot)
